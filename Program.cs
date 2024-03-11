@@ -10,22 +10,13 @@ namespace Beecrowd_Area_1012
     {
         static void Main(string[] args)
         {
-            double A, B, C, RectangleTri, Circle, Trapezium, Squre, Rectangle;
-            A = Convert.ToDouble(Console.ReadLine());
-            B = Convert.ToDouble(Console.ReadLine());
-            C = Convert.ToDouble(Console.ReadLine());
+            string[] values = Console.ReadLine().Split();
 
-            RectangleTri = 0.5*(A * C);
-            Circle = 3.14159 * C * C;
-            Trapezium = 0.5 * C *(A + B);
-            Squre = B * B;
-            Rectangle = A * B;
-
-            Console.WriteLine("TRIANGULO: {0:00.000}", RectangleTri);
-            Console.WriteLine("CIRCULO: {0:00.000}", Circle);
-            Console.WriteLine("TRAPEZIO: {0:00.000}", Trapezium);
-            Console.WriteLine("QUADRADO: {0:00.000}", Squre);
-            Console.WriteLine("RETANGULO: {0:00.000}", Rectangle);
+            Console.WriteLine("TRIANGULO: " + ((double.Parse(values[0]) * double.Parse(values[2])) / 2).ToString("0.000"));
+            Console.WriteLine("CIRCULO: " + ((Math.PI * (double.Parse(values[2]) * double.Parse(values[2])))).ToString("0.000"));
+            Console.WriteLine("TRAPEZIO: " + (((double.Parse(values[0]) + double.Parse(values[1])) * double.Parse(values[2])) / 2).ToString("0.000"));
+            Console.WriteLine("QUADRADO: " + (double.Parse(values[1]) * double.Parse(values[1])).ToString("0.000"));
+            Console.WriteLine("RETANGULO: " + ((double.Parse(values[0]) * double.Parse(values[1]))).ToString("0.000"));
             Console.ReadKey();
         }
     }
