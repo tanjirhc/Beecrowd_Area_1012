@@ -17,7 +17,7 @@ namespace Beecrowd_Area_1012
 
             RectangleTri = 0.5*(A * C);
             Circle = 3.14159 * C * C;
-            Trapezium = 0.5 * (A + B);
+            Trapezium = 0.5 * C *(A + B);
             Squre = B * B;
             Rectangle = A * B;
 
