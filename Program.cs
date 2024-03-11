@@ -15,11 +15,11 @@ namespace Beecrowd_Area_1012
             B = Convert.ToDouble(Console.ReadLine());
             C = Convert.ToDouble(Console.ReadLine());
 
-            RectangleTri = (0.5*(A + C));
-            Circle = 3.14159*C*C;
-            Trapezium = A+B+C;
+            RectangleTri = 0.5*(A * C);
+            Circle = 3.14159 * C * C;
+            Trapezium = 0.5 * (A + B);
             Squre = B * B;
-            Rectangle = 2 * (A + B);
+            Rectangle = A * B;
 
             Console.WriteLine("TRIANGULO: {0:00.000}", RectangleTri);
             Console.WriteLine("CIRCULO: {0:00.000}", Circle);
